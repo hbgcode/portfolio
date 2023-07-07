@@ -8,7 +8,6 @@ const Product = () => {
         <div className="p-circle"></div>
         <div className="p-circle"></div>
 </div>
-<
     </div>
   )
 }

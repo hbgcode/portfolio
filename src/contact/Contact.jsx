@@ -4,12 +4,11 @@ import Email from '../images/email.png'
 import Address from '../images/address.jpg'
 import { useContext, useRef, useState } from 'react'
 import emailjs from "@emailjs/browser";
-import { ThemeContext } from '../context'
-
+import useDarkMode from '../context'
 const Contact = () => {
   const formRef = useRef(null)
   const [done, setDone] = useState(false)
-  const theme = useContext(ThemeContext);
+  const { handleToggleTheme , state } = useDarkMode();
   const darkMode = theme.state.darkMode;
    const handleSubmit = (e)=>{
     e.preventDefault();

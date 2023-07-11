@@ -4,12 +4,13 @@
   import ProductList from "./components/ProductList/ProductList";
   import Toggle from "./components/toggle/Toggle";
   import Contact from "./contact/Contact";
-  import { ThemeContext } from "./context";
+  import useDarkMode from "./context";
   const App = () => {
 
-    const theme = useContext(ThemeContext);
-    const darkMode = theme.state.darkMode;
-    // console.log('theme')
+    const {state} = useContext(useDarkMode);
+    console.log(state);
+    // const darkMode = theme.state.darkMode;
+    // console.log(darkMode)
     // console.log(ThemeContext)
     return <div style={{ backgroundColor: darkMode ? '#222' : 'white', color: darkMode ? 'white' : 'black' }}>
       <Toggle/>

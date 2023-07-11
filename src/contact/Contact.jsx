@@ -3,13 +3,11 @@ import Phone from '../images/phone.png'
 import Email from '../images/email.png'
 import Address from '../images/address.jpg'
 import { useContext, useRef, useState } from 'react'
-import emailjs from "@emailjs/browser";
-import useDarkMode from '../context'
-const Contact = () => {
+import emailjs from "@emailjs/browser";const Contact = () => {
   const formRef = useRef(null)
   const [done, setDone] = useState(false)
-  const { handleToggleTheme , state } = useDarkMode();
-  const darkMode = theme.state.darkMode;
+  // const { handleToggleTheme , state } = useDarkMode();
+  // const darkMode = theme.state.darkMode;
    const handleSubmit = (e)=>{
     e.preventDefault();
     emailjs.sendForm('service_h3w479f', 'template_u8tbnel', formRef.current, 'qP0NV0GqsOidBkpkF')
@@ -49,10 +47,10 @@ const Contact = () => {
             fill up this form below then send me. 
           </p>
           <form onSubmit={handleSubmit} ref={formRef} >
-            <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Name' name='user_name' />
+            {/* <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Name' name='user_name' />
             <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Subject' name='user_sub' />
             <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Email' name='user_email' />
-            <textarea style={{backgroundColor: darkMode && '#333'}} placeholder='Message.............' rows="5" name='message'></textarea>
+            <textarea style={{backgroundColor: darkMode && '#333'}} placeholder='Message.............' rows="5" name='message'></textarea> */}
             <button>Submit</button>
             {done && "Thanks.."}
           </form> 

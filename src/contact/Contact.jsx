@@ -26,7 +26,7 @@ const Contact = () => {
     <div className='c-bg'>
       <div className="c-wrapper">
         <div className="c-left">
-          <h1 className="c-title">Let's iscuss your project</h1>
+          <h1 className="c-title">Let's discuss your project</h1>
           <div className="c-info">
             <div className="c-info-item">
               <img src={Email} alt="" className="c-icon" />
@@ -45,14 +45,15 @@ const Contact = () => {
 
         <div className="c-right">
           <p className="c-desc">
-            <b>What's your story</b> Get in touch.avdshwjdjlskdlsdsdks vdfdfa-flip-horizontal
-            gfdgrwhuejtrngdfgmbjbdnvkjdffffghwjscnbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+            <h3>Contact With Me</h3>
+            Feel free to directly contact with me via phone or email below or 
+            fill up this form below then send me. 
           </p>
           <form onSubmit={handleSubmit} ref={formRef} >
             <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Name' name='user_name' />
             <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Subject' name='user_sub' />
             <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Email' name='user_email' />
-            <textarea style={{backgroundColor: darkMode && '#333'}} name=" " id="" cols="30" rows="10"></textarea>
+            <textarea style={{backgroundColor: darkMode && '#333'}} placeholder='Message.............' rows="5" name='message'></textarea>
             <button>Submit</button>
             {done && "Thanks.."}
           </form> 

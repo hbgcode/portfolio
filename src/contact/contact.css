@@ -45,6 +45,7 @@
 }
 .c-desc{
     font-weight: 200;
+    margin: 10px;
 }
 form{
     margin-top: 20px;
@@ -59,8 +60,9 @@ input{
     padding-left: 10px;
 }
 textarea{
-    width: 100%;
-    margin: 10px 0px;
+    display: flex;
+    width: 90%;
+    margin: 20px;
     font-size: 14px;
     padding-left: 10px;
 }

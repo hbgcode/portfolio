@@ -46,7 +46,7 @@
 .a-desc{
     font-weight: 300;
 }
-.a-award{
+/* .a-award{
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@
     font-weight: bold;
     color: #303030;
     margin-bottom: 10px;
-}
+} */
 
 @media screen and (max-width: 480px) {
     .a{

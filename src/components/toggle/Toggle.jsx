@@ -13,9 +13,9 @@ const Toggle = () => {
   // }
   return (  
     <div className='t'>
-      <img src={Sun} alt="" onClick={()=>{handleTheme()}} className="t-icon" />
-      <img src={Moon} alt="" onClick={()=>{handleTheme()}} className="t-icon" />
-        <div className="t-button" onClick={handleTheme()} style={{left: state.darkMode ? 0 :25}}></div>
+      <img src={Sun} alt="" onClick={handleTheme} className="t-icon" />
+      <img src={Moon} alt="" onClick={handleTheme} className="t-icon" />
+        <div className="t-button" onClick={handleTheme} style={{left: state.darkMode ? 0 :25}}></div>
     </div>
   )
 }

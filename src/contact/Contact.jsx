@@ -47,10 +47,10 @@ import emailjs from "@emailjs/browser";const Contact = () => {
             fill up this form below then send me. 
           </p>
           <form onSubmit={handleSubmit} ref={formRef} >
-            {/* <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Name' name='user_name' />
-            <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Subject' name='user_sub' />
-            <input style={{backgroundColor: darkMode && '#333'}} type="text" placeholder='Email' name='user_email' />
-            <textarea style={{backgroundColor: darkMode && '#333'}} placeholder='Message.............' rows="5" name='message'></textarea> */}
+            <input  type="text" placeholder='Name' name='user_name' />
+            <input  type="text" placeholder='Subject' name='user_sub' />
+            <input type="text" placeholder='Email' name='user_email' />
+            <textarea placeholder='Message.............' rows="5" name='message'></textarea>
             <button>Submit</button>
             {done && "Thanks.."}
           </form> 
